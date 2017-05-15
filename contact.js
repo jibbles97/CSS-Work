@@ -1,0 +1,1 @@
+src="https://www.google.co.uk/maps/place/Chantry+Student+Residence/@50.9014177,-1.3960002,18z/data=!4m5!3m4!1s0x0:0xd8d1111fbdf5163b!8m2!3d50.9013743!4d-1.396645"

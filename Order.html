@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Solent pizzas-Order Page</title>
+        <link rel="icon" href="imgs/favicon.png">
+        <h1>Welcome to the to Solent pizzas!</h1>
+        <link rel="stylesheet" href="main.css">
+        <script type="text/javascript" src="order.js"></script>
+    </head>
+    <body onLoad="validate();">
+        <div id="forms"> <!--beginning of div forms-->
+            <h2>Make your own pizza!</h2>
+            <form action="http://solentpizza.html" method="post" id="orderForm" name="order" onsubmit="Thank You for your order!"> <!--beginning of form order-->
+                <p>Select your pizza base*:</p>
+                    <fieldset>
+                        <input type="radio" name="pizza" value="Small" onclick="runTotal();">Small £5.00<br>
+                        <input type="radio" name="pizza" value="Medium" onclick="runTotal();">Medium £7.50<br>
+                        <input type="radio" name="pizza" value="Large" onclick="runTotal();">Large £10.00<br>
+                        <input type="radio" name="pizza" value="X-Large" onclick="runTotal();">X-Large £12.50<br>
+                        <p class="error" id="pizzaBaseRequiredError" style="display: none"> Choose a pizza base. Don't be stupid. </p>
+                    </fieldset>
+                <p>Select one or more toppings*:</p>
+                    <fieldset>
+                        <input type="checkbox" name="toppings" value="cheese" onclick="runTotal();">Cheese £0.80<br>
+                        <input type="checkbox" name="toppings" value="mushrooms" onclick="runTotal();">Peperoni £0.80<br>
+                        <input type="checkbox" name="toppings" value="ham" onclick="runTotal();">Pineapple £0.80<br>
+                        <input type="checkbox" name="toppings" value="anchovies" onclick="runTotal();">Salmon £0.80<br>
+                        <p  class="error" id="toppingRequiredError" style="display: none"> Choose at least 1 topping like i asked you too. </p>
+                    </fieldset>
+                <p>Delivery Information</p>
+                    <input type="text" name="del" value="Delivery Information"><br>
+                <h3>Total</h3>
+                    <p><input type="text" name="Total" value="0"><br> </p>
+                    <input type="submit" value="submit"> <input type="reset">
+            </form> <!--end of form order-->
+        </div> <!--end of div=forms-->
+    </body>
+</html>

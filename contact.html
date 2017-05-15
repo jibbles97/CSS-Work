@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Solent Pizzas-Contact us </title>
+        <link rel="icon" href="imgs/favicon.png">
+        <meta charset="utf-8">
+        <meta name="description" content="Session 8 form task">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h1> Contact Page</h1>
+        <div id="location" style="width:700px;height:500px;"> <!--beginning of div location-->
+            <h2> Find us at:</h2>
+            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+            <div style='overflow:hidden;height:440px;width:700px;'>
+                <div id='gmap_canvas' style='height:440px;width:700px;'></div> <!--end of div gmap_canvas-->
+                <div id="embed_ref"><small><a href="http://embedgooglemaps.com">embed google maps</a></small></div> <!--end of div embed_ref-->
+                <style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div>
+            <script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(50.9007237,-1.3959773999999925),mapTypeId: google.maps.MapTypeId.TERRAIN};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(50.9007237,-1.3959773999999925)});infowindow = new google.maps.InfoWindow({content:'<strong>Solent Pizzas</strong><br>012 Marsh Lane, Southampton SO14 1ZA<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+        </div> <!--end of div locations-->
+        <form id="contact" action="https://en.wikipedia.org/wiki/David_Tennant" method="post"> <!--beginning of form contact-->
+            <fieldset>
+                <legend> Contact Infromation </legend>
+                <p><label> First Name(*): </label> <input type="text" name="first_name" required></p>
+                <p><label> Last Name(*):   </label> <input type="text" name="last_name" required></p>
+                <p><label>Phone Number </label> <input type="text" name="phone"></p>
+                <p><label> Email(*): </label> <input type="email" name="address_1" required></p>
+                <p><label>Message(*):</label> <textarea name="message" rows="5" cols="25" required></textarea></p>
+            </fieldset>            
+            <P><input type="submit"></P>
+        </form> <!--end of form contact-->
+    </body>
+</html>

@@ -1,0 +1,46 @@
+header{
+    height: 100px;
+    background-color: red;
+    text-align: center;
+}
+#leftside{
+    width: 20%;
+    background-color: blue;
+    height: 400px;
+    float: left;
+}
+section{
+    background-color: chartreuse;
+    width: 80%;
+    float: right;
+    height: 400px;
+}
+body{
+    background-color: blueviolet;
+}
+footer{
+    background-color: deepskyblue;
+    height: 500px;
+}
+#leftside button{
+    background-color: deeppink;
+    border-color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+h1,h2{
+    font-family: cursive;
+}
+#location{
+    text-align: center;
+    margin-left: 25%;
+}
+#contact{
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
+img{
+    width: 500px;
+}
